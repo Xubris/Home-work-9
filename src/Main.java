@@ -10,8 +10,12 @@ public class Main {
         int min = inputArray1[0];
         for (int value : inputArray1) {
             sum += value;
-            if (value > max) max = value;
-            if (value < min) min = value;
+            if (value > max) {
+                max = value;
+            }
+            if (value < min) {
+                min = value;
+            }
         }
         double average = (double) sum / inputArray1.length;
         double[] outputArray1 = {sum, max, min, average};
@@ -66,8 +70,9 @@ public class Main {
         int[] outputArray5 = new int[1];
         outputArray5[0] = 0;
         for (int profit : inputArray5) {
-            if (profit > 0)
+            if (profit > 0) {
                 outputArray5[0]++;
+            }
         }
         System.out.println("inputArray5:" + Arrays.toString(inputArray5));
         System.out.println("outputArray5 (количество рентабельных месяцев):" + Arrays.toString(outputArray5));
